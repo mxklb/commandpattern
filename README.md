@@ -9,7 +9,7 @@ It's based on this tutorial: http://www.dreamincode.net/forums/topic/38412-the-c
 It's kind of an easy extenable template for the usage of the command pattern. Feel free to use or mod it!
 
 
-[![Build Status](https://travis-ci.org/maxkalb/commandpattern.png)](https://travis-ci.org/maxkalb/commandpattern)
+[![Build Status](https://travis-ci.org/maxkalb/commandpattern.svg?branch=master)](https://travis-ci.org/maxkalb/commandpattern)
 
 ### Build steps
 `qmake`

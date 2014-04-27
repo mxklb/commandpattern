@@ -1,21 +1,22 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
+# Compiled source
+###################
+*.com
+*.class
 *.dll
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
 *.exe
-*.out
-*.app
+*.o
+*.so
+Makefile
+commandPattern
+
+# Temp files
+###################
+*~
+
+# Log files
+###################
+*.log
+
+# Qt user files
+###################
+*.pro.user*
