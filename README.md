@@ -10,6 +10,7 @@ It's kind of an easy extenable template for the usage of the command pattern. Fe
 
 
 [![Build Status](https://travis-ci.org/mxklb/commandpattern.svg?branch=master)](https://travis-ci.org/mxklb/commandpattern)
+<a href="https://scan.coverity.com/projects/5851"><img alt="Coverity Scan Build Status" src="https://scan.coverity.com/projects/5851/badge.svg"/></a>
 
 ### Build steps
 `qmake`
