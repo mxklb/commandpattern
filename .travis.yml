@@ -2,10 +2,29 @@ language: cpp
 compiler:
   - gcc
   - clang
+
 before_install:
 - sudo apt-get update
 - sudo apt-get install libqt4-dev qt4-qmake
+
+env:
+  global:
+   # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
+   #   via the "travis encrypt" command using the project repo's public key
+   - secure: "e1euTJQNC1nITuIM1rYCFB4BVp3R2mAxA+138FTfU5umu5XGA6jowGHPB3oOlddqb/6ml3n1eQnhxnvotKcFlHV6D/hwd2IY+wR8FmlgIAdNfukGdOnayMXEZ1gn/GH4YFYG/PCbL+ErvACGpQ8tRuZbpyQOxAqHZq7h77mnvx4="
+
+addons:
+  coverity_scan:
+    project:
+      name: "mxklb/commandpattern"
+      description: "Build submitted via Travis CI"
+    notification_email: dev@xamblak.de
+    build_command_prepend: "qmake -project"
+    build_command:   "qmake commandPattern.pro && make"
+    branch_pattern: master
+
 script:
 - qmake -project
 - qmake commandPattern.pro
 - make
+
